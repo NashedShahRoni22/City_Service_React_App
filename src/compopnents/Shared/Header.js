@@ -1,23 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../../assests/logo.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assests/logo.png";
 
 const Header = () => {
-    const menuItems = (
-        <>
-          <li>
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link href={"/all-services"}>All Services</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Login</Link>
-          </li>
-        </>
-      );
-    return (
-        <nav className="shadow-xl py-2">
+  const menuItems = (
+    <>
+      <li>
+        <Link to={"/"}>Home</Link>
+      </li>
+      <li>
+        <Link to={"/all-services"}>All Services</Link>
+      </li>
+      <li>
+        <Link to={"/login"}>Login</Link>
+      </li>
+    </>
+  );
+  return (
+    <nav className="shadow-xl py-2">
       <div className="flex justify-between container mx-auto">
         <div>
           <div className="dropdown">
@@ -45,21 +45,21 @@ const Header = () => {
             </ul>
           </div>
           <Link href={"/"} className="btn btn-ghost">
-            <img
-              src={logo}
-              className="rounded-full mr-3 h-8"
-              alt='logo'
-            />
-            <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-[#6342FD]">City Service</span>
+            <img src={logo} className="rounded-full mr-3 h-8" alt="logo" />
+            <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-[#6342FD]">
+              City Service
+            </span>
           </Link>
         </div>
 
         <div className="hidden md:flex">
-          <ul className="font-semibold text-[#6342FD] menu menu-horizontal px-1">{menuItems}</ul>
+          <ul className="font-semibold text-[#6342FD] menu menu-horizontal px-1">
+            {menuItems}
+          </ul>
         </div>
       </div>
     </nav>
-    );
+  );
 };
 
 export default Header;

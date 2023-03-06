@@ -10,7 +10,7 @@ const LandingCompo = () => {
                 Your Personal Assistant
               </h1>
 
-              <p className="text-white text-center text-xl lg:text-6xl font-semibold my-5">
+              <p className="text-white text-center text-3xl lg:text-6xl font-semibold my-5">
                 <Typewriter
                   words={[
                     "One-stop solution for your services",

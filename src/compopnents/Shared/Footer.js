@@ -1,18 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assests/logo.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assests/logo.png";
 
 const Footer = () => {
-    return (
-        <footer className="footer footer-center p-10 bg-[#6342FD] text-primary-content">
+  return (
+    <footer className="footer footer-center p-10 border-t-2">
       <div>
-        <img
-          src={logo}
-          className="rounded-full h-16 mr-3"
-          alt=''
-        />
+        <img src={logo} className="rounded-full h-16 mr-3" alt="" />
         <p className="font-bold">
-          City Service<br />
+          City Service
+          <br />
           Providing reliable tech since 2020
         </p>
         <p>Copyright © 2023 - All right reserved</p>
@@ -55,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    );
+  );
 };
 
 export default Footer;
